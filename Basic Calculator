@@ -1,0 +1,40 @@
+# include <iostream>
+using namespace std;
+
+int main()
+{
+    char op;
+    float num1, num2;
+
+    cout<<"\n\t[+] [-] [*] [/]";
+    cout<<"\n\nEnter operator: ";
+    cin >>op;
+
+    cout<<"\nEnter First Number: ";
+    cin>>num1;
+	cout <<"Enter Second Number: ";
+    cin>>num2;
+
+    switch(op)
+    {
+        case '+':
+            cout<<"Answer is: "<<num1+num2;
+            break;
+
+        case '-':
+            cout<<"Answer is: "<<num1-num2;
+            break;
+
+        case '*':
+            cout<<"Answer is: "<<num1*num2;
+            break;
+
+        case '/':
+            cout<<"Answer is: "<<num1/num2;
+            break;
+        default:
+            cout << "Error! Operator is not correct";
+            break;
+    }
+    return 0;
+}
